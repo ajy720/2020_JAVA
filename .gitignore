@@ -33,8 +33,7 @@ hs_err_pid*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-
-# End of https://www.gitignore.io/api/java,visualstudiocode
+.vscode
+.idea
+.DS_Store
+.metadata

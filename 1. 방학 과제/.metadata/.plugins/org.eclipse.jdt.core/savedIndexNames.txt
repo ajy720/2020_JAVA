@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+/Users/anhyeonseok/Documents/2020_JAVA/1. 방학 과제/.metadata/.plugins/org.eclipse.jdt.core
-939283709.index
-1160444364.index
-3502253352.index
