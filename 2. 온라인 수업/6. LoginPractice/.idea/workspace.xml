@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c5f1b65-d719-4f43-9aa9-b94770b40f73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../7. Variables/src/ATM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +102,8 @@
       <updated>1589166867130</updated>
       <workItem from="1589166875316" duration="420000" />
       <workItem from="1589167496032" duration="1461000" />
+      <workItem from="1589760999707" duration="54000" />
+      <workItem from="1589763599319" duration="1178000" />
     </task>
     <servers />
   </component>
@@ -118,6 +120,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1158" y="302" key="#Project_Structure" timestamp="1589167064615">
@@ -148,9 +151,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1235" y="278" key="SettingsEditor/0.0.2560.1400/2560.289.1920.1040@0.0.2560.1400" timestamp="1589167293491" />
-    <state x="1134" y="313" key="new project wizard" timestamp="1589167289300">
+    <state x="119" y="405" key="new project wizard" timestamp="1589761049735">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1134" y="313" key="new project wizard/0.0.2560.1400/2560.289.1920.1040@0.0.2560.1400" timestamp="1589167289300" />
+    <state x="119" y="405" key="new project wizard/0.0.2560.1400/2560.289.1920.1040@0.0.2560.1400" timestamp="1589761049735" />
   </component>
 </project>
