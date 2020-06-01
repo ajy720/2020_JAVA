@@ -1,19 +1,18 @@
 import java.util.Scanner;
 
 public class TimeTables {
-    public static void main(String[] args){
-        Scanner scan = new Scanner(System.in);
+    static Scanner scan = new Scanner(System.in);
 
+    public static void main(String[] args) {
         System.out.println("몇 단?");
-        int n = scan.nextInt();
 
-        print(n);
-
+        printTable(scan.nextInt());
     }
 
-    private static void print(int n) {
+    private static void printTable(int n){
         for (int i = 1; i < 10; i++) {
-            System.out.println(n+" * "+i+" = "+n*i);
+            System.out.println(String.format("%d * %d = %2d", n, i, n*i));
         }
+        
     }
 }
