@@ -2,34 +2,32 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Login {
-    static Scanner scan = new Scanner(System.in);
+    static Scanner scan = LoginManager.scan;
+    static File memberDB = LoginManager.memberDB;
 
-    static void MemberLogin(){
+    public static void login() {
+        System.out.println("-----로그인-----");
         System.out.println("아이디를 입력하세요.");
-        String passId = scan.nextLine();
+        String passId = scan.next();
 
         System.out.println("비밀번호를 입력하세요.");
-        String passPw = scan.nextLine();
+        String passPw = scan.next();
 
-        int pass = 0;
-
-        File file = new File("memberDB.txt");
         try {
-            FileReader fileWriter = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileWriter);
+            FileReader fileReader = new FileReader(memberDB);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+
             String line = "";
-
-            while ((line = bufferedReader.readLine()) != null){
-
-
-
+            while((line = bufferedReader.readLine()) != null){
                 if(line.indexOf(passId) != -1 && line.indexOf(passPw) != -1){
-                    System.out.println("로그인에 성공했습니다.");
-                    pass = 1;
+                    System.out.println("로그인에 성공하셨습니다.");
+                    bufferedReader.close();
+                    return;
                 }
             }
-            if(pass == 0) System.out.println("로그인에 실패했습니다.");
+            System.out.println("로그인에 실패하셨습니다.");
             bufferedReader.close();
+            return;
 
         } catch (IOException e) {
             e.printStackTrace();

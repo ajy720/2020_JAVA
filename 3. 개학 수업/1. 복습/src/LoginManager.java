@@ -1,31 +1,28 @@
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.Scanner;
 
 public class LoginManager {
     static Scanner scan = new Scanner(System.in);
-
+    static File memberDB;
     public static void main(String[] args) {
-        File file = new File("memberDB.txt");
+        memberDB = new File("memberDB.txt");
 
-        try {
-            FileWriter fileWriter = new FileWriter(file, true);
-            fileWriter.close();
+        while(true) {
+            System.out.println("1 : 로그인 | 2 : 회원가입 | 3 : 종료");
 
-            System.out.println("로그인 : 1 | 회원가입 : 2 ");
-
-            switch (scan.nextInt()){
+            switch (scan.nextInt()) {
                 case 1:
-                    Login.MemberLogin();
+                    Login.login();
                     break;
                 case 2:
+                    Register.join();
                     break;
+                case 3:
+                    System.out.println("종료합니다.");
+                    return;
                 default:
-                    break;
+                    System.out.println("잘못된 입력입니다.");
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 }
