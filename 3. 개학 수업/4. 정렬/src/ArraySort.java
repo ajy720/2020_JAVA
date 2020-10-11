@@ -7,7 +7,7 @@ public class ArraySort {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        System.out.println("몇개의 랜덤 숫자를 가지고 삽입 정렬을 실시할까요?");
+        System.out.println("몇개의 랜덤 숫자를 가지고 정렬을 실시할까요?");
         int n = scanner.nextInt();
 
         Integer[] arr = arr_rand(n);
