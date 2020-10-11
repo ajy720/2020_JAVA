@@ -28,7 +28,7 @@ public class InsertSort {
             for (j = i - 1; j >= 0 && value < arr[j]; j--) {
                 arr[j + 1] = arr[j];
             }
-
+    
             arr[j + 1] = value;
         }
     }

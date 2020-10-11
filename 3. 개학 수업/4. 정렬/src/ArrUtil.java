@@ -1,4 +1,5 @@
 public class ArrUtil {
+
     public static int[] arr_rand(int n) {
         int[] arr = new int[n];
 
@@ -14,7 +15,7 @@ public class ArrUtil {
                 arr) {
             System.out.printf("%2d ", e);
         }
-        System.out.println();
+        System.out.println("\n");
     }
 
 }
