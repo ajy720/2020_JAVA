@@ -7,14 +7,24 @@ public class ShellSort {
         System.out.println("몇개의 랜덤 숫자를 가지고 쉘 정렬을 실시할까요?");
         int n = scanner.nextInt();
 
-        int[] arr = ArrUtil.arr_rand(n);
+        int[] arr = ArrUtil.arr_rand(n, 10000);
 
         System.out.println(n + "개의 숫자");
         ArrUtil.arr_dump(arr);
 
+        shellSort(arr);
 
-        for (int term = n/2; term > 0; term/=2) {
-            if(term%2==0) term += 1;
+        System.out.println("정렬 완료");
+        ArrUtil.arr_dump(arr);
+
+
+    }
+
+    public static void shellSort(int[] arr) {
+        int n = arr.length;
+
+        for (int term = n / 2; term > 0; term /= 2) {
+            if (term % 2 == 0) term += 1;
 
             for (int k = 0; k < term; k++) {
                 // 시작지점이 k, 간극이 term인 삽입 정렬
@@ -28,15 +38,10 @@ public class ShellSort {
                 }
             }
 
-
-            System.out.printf("term: %2d 정렬 완료\n", term);
-            ArrUtil.arr_dump(arr);
+//
+//            System.out.printf("term: %2d 정렬 완료\n", term);
+//            ArrUtil.arr_dump(arr);
         }
-
-
-        System.out.println("정렬 완료");
-        ArrUtil.arr_dump(arr);
-
     }
 }
 

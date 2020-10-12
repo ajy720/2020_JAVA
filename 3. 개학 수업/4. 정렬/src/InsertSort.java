@@ -8,7 +8,7 @@ public class InsertSort {
         System.out.println("몇개의 랜덤 숫자를 가지고 삽입 정렬을 실시할까요?");
         int n = scanner.nextInt();
 
-        int[] arr = ArrUtil.arr_rand(n);
+        int[] arr = ArrUtil.arr_rand(n, 10000);
 
         System.out.println(n + "개의 숫자");
         ArrUtil.arr_dump(arr);
@@ -17,9 +17,10 @@ public class InsertSort {
 
         System.out.println("정렬 완료");
         ArrUtil.arr_dump(arr);
+
     }
 
-    private static void insertSort(int[] arr) {
+    public static void insertSort(int[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; i++) {
             int value = arr[i];

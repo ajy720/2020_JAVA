@@ -10,6 +10,16 @@ public class ArrUtil {
         return arr;
     }
 
+    public static int[] arr_rand(int n, int range) {
+        int[] arr = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            arr[i] = (int) (Math.random() * range);
+        }
+
+        return arr;
+    }
+
     public static void arr_dump(int[] arr) {
         for (int e :
                 arr) {
