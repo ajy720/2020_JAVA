@@ -7,7 +7,9 @@ public class ShellSort {
         System.out.println("몇개의 랜덤 숫자를 가지고 쉘 정렬을 실시할까요?");
         int n = scanner.nextInt();
 
-        int[] arr = ArrUtil.arr_rand(n, 10000);
+//        int[] arr = ArrUtil.arr_rand(n, 10000);
+        int[] arr = {30, 50, 7, 40, 88, 15, 44, 55, 22, 33, 77, 99, 11, 66, 1, 85};
+
 
         System.out.println(n + "개의 숫자");
         ArrUtil.arr_dump(arr);
@@ -38,9 +40,8 @@ public class ShellSort {
                 }
             }
 
-//
-//            System.out.printf("term: %2d 정렬 완료\n", term);
-//            ArrUtil.arr_dump(arr);
+            System.out.printf("term: %2d 정렬 완료\n", term);
+            ArrUtil.arr_dump(arr);
         }
     }
 }

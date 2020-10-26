@@ -30,7 +30,7 @@ public class ArraySort {
         Arrays.sort(arr);
     }
 
-    publicw static void arraySort(int[] arr) {
+    public static void arraySort(int[] arr) {
         Arrays.sort(arr);
     }
 
